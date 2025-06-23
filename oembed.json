@@ -5,7 +5,7 @@
   "height": 300,
   "title": "Wave Animation - Lottie Player",
   "author_name": "Lottie oEmbed Host",
-  "author_url": "https://yourusername.github.io/lottie-oembed/",
+  "author_url": "https://bhipps.github.io/lottie-oembed/",
   "provider_name": "Lottie oEmbed Host",
   "provider_url": "https://bhipps.github.io/lottie-oembed/",
   "html": "<iframe src=\"https://bhipps.github.io/lottie-oembed/wave/\" width=\"400\" height=\"300\" frameborder=\"0\" allowfullscreen></iframe>",
