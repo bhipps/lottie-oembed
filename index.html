@@ -1,121 +1,118 @@
+I found the issue! Your root `index.html` file has the wrong content.
+
+Please edit the root `index.html` file in your GitHub repo and **replace ALL its content** with the corrected version below. I've updated the URLs to `bhipps.github.io`.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wave Animation - Lottie Player</title>
+    <title>Lottie oEmbed Host</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background: #f8f9fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        .player-container {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            padding: 2rem;
-            text-align: center;
-            max-width: 500px;
-            width: 90%;
-        }
-        .animation-player {
-            width: 400px;
-            height: 300px;
-            max-width: 100%;
+            max-width: 800px;
             margin: 0 auto;
-            border-radius: 8px;
-            background: transparent;
-        }
-        h1 {
+            padding: 2rem;
+            line-height: 1.6;
             color: #333;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
         }
-        .controls {
-            margin-top: 1rem;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
+        .animation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .animation-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .animation-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .animation-preview {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1rem;
+            border: 1px solid #eee;
+            border-radius: 4px;
         }
         .btn {
+            display: inline-block;
             padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 6px;
             background: #007bff;
             color: white;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background 0.2s;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 0.25rem;
         }
         .btn:hover {
             background: #0056b3;
         }
-        .btn:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-        .info {
-            margin-top: 1rem;
-            padding: 1rem;
+        .code {
             background: #f8f9fa;
-            border-radius: 6px;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Consolas', monospace;
             font-size: 0.9rem;
-            color: #666;
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
-    <div class="player-container">
-        <h1>🌊 Wave Animation</h1>
-        <lottie-player 
-            id="wave-player"
-            src="wave.json" 
-            background="transparent" 
-            speed="1" 
-            class="animation-player"
-            loop 
-            autoplay>
-        </lottie-player>
-        
-        <div class="controls">
-            <button class="btn" onclick="togglePlay()">⏯️ Play/Pause</button>
-            <button class="btn" onclick="restart()">🔄 Restart</button>
-            <button class="btn" onclick="toggleLoop()">🔁 Toggle Loop</button>
+    <h1>🎬 Lottie oEmbed Host</h1>
+    <p>This repository hosts multiple Lottie animations with embeddable HTML pages and oEmbed JSON endpoints via GitHub Pages.</p>
+    
+    <h2>Available Animations</h2>
+    <div class="animation-grid">
+        <div class="animation-card">
+            <div class="animation-preview">
+                <lottie-player src="wave/wave.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            </div>
+            <h3>Wave Animation</h3>
+            <p>A smooth, flowing wave animation perfect for loading states or decorative elements.</p>
+            <a href="wave/" class="btn">View Player</a>
+            <a href="wave/oembed.json" class="btn">oEmbed JSON</a>
         </div>
         
-        <div class="info">
-            <strong>Embed this animation:</strong><br>
-            <code>&lt;iframe src="https://yourusername.github.io/lottie-oembed/wave/" width="400" height="300"&gt;&lt;/iframe&gt;</code>
+        <div class="animation-card">
+            <div class="animation-preview">
+                <lottie-player src="confetti/confetti.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            </div>
+            <h3>Confetti Animation</h3>
+            <p>Celebratory confetti burst animation for success states and achievements.</p>
+            <a href="confetti/" class="btn">View Player</a>
+            <a href="confetti/oembed.json" class="btn">oEmbed JSON</a>
+        </div>
+        
+        <div class="animation-card">
+            <div class="animation-preview">
+                <lottie-player src="logo-spin/logo-spin.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+            </div>
+            <h3>Logo Spin Animation</h3>
+            <p>Rotating logo animation ideal for branding and loading indicators.</p>
+            <a href="logo-spin/" class="btn">View Player</a>
+            <a href="logo-spin/oembed.json" class="btn">oEmbed JSON</a>
         </div>
     </div>
-
+    
+    <h2>How to Embed</h2>
+    <h3>Direct iframe Embedding</h3>
+    <div class="code">
+&lt;iframe src="https://bhipps.github.io/lottie-oembed/wave/" width="400" height="300"&gt;&lt;/iframe&gt;
+    </div>
+    
+    <h3>oEmbed Integration</h3>
+    <p>Use the oEmbed endpoints for automatic embedding in platforms that support oEmbed:</p>
+    <div class="code">
+https://bhipps.github.io/lottie-oembed/wave/oembed.json
+    </div>
+    
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-        const player = document.getElementById('wave-player');
-        
-        function togglePlay() {
-            if (player.paused) {
-                player.play();
-            } else {
-                player.pause();
-            }
-        }
-        
-        function restart() {
-            player.stop();
-            player.play();
-        }
-        
-        function toggleLoop() {
-            player.loop = !player.loop;
-        }
-    </script>
 </body>
 </html>
+```
