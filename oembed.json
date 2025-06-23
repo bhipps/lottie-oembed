@@ -7,9 +7,9 @@
   "author_name": "Lottie oEmbed Host",
   "author_url": "https://yourusername.github.io/lottie-oembed/",
   "provider_name": "Lottie oEmbed Host",
-  "provider_url": "https://yourusername.github.io/lottie-oembed/",
-  "html": "<iframe src=\"https://yourusername.github.io/lottie-oembed/wave/\" width=\"400\" height=\"300\" frameborder=\"0\" allowfullscreen></iframe>",
-  "thumbnail_url": "https://yourusername.github.io/lottie-oembed/wave/thumbnail.png",
+  "provider_url": "https://bhipps.github.io/lottie-oembed/",
+  "html": "<iframe src=\"https://bhipps.github.io/lottie-oembed/wave/\" width=\"400\" height=\"300\" frameborder=\"0\" allowfullscreen></iframe>",
+  "thumbnail_url": "https://bhipps.github.io/lottie-oembed/wave/thumbnail.png",
   "thumbnail_width": 400,
   "thumbnail_height": 300
 }
