@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "type": "rich",
+  "width": 400,
+  "height": 300,
+  "title": "Board Moves Animation - Lottie Player",
+  "author_name": "Lottie oEmbed Host",
+  "author_url": "https://bhipps.github.io/lottie-oembed/",
+  "provider_name": "Lottie oEmbed Host",
+  "provider_url": "https://bhipps.github.io/lottie-oembed/",
+  "html": "<iframe src=\\"https://bhipps.github.io/lottie-oembed/board-moves/\\" width=\\"400\\" height=\\"300\\" frameborder=\\"0\\" allowfullscreen></iframe>",
+  "thumbnail_url": "https://bhipps.github.io/lottie-oembed/board-moves/thumbnail.png",
+  "thumbnail_width": 400,
+  "thumbnail_height": 300
+}
