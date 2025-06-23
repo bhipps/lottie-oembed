@@ -14,13 +14,13 @@ Each subfolder (e.g., `wave/`) contains:
 ### Direct Embedding
 Each animation can be embedded directly via iframe:
 ```html
-<iframe src="https://yourusername.github.io/lottie-oembed/wave/" width="400" height="300"></iframe>
+<iframe src="https://bhipps.github.io/lottie-oembed/wave/" width="400" height="300"></iframe>
 ```
 
 ### oEmbed Support
 Each animation provides an oEmbed endpoint for automatic embedding:
-- oEmbed URL: `https://yourusername.github.io/lottie-oembed/wave/oembed.json`
-- Player URL: `https://yourusername.github.io/lottie-oembed/wave/`
+- oEmbed URL: `https://bhipps.github.io/lottie-oembed/wave/oembed.json`
+- Player URL: `https://bhipps.github.io/lottie-oembed/wave/`
 
 ## 🚀 Available Animations
 
